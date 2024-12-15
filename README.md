@@ -34,6 +34,6 @@ nodemon = es una herramienta de desarrollo para aplicaciones Node.js que ayuda a
 
 Tambien se pueden instalar cuntas combinando el comando de instalacion seguida de todas las dependencias de la siguiente forma
 
-npm install express mysql2 body-parser express-session bcrypt dotenv multer xlsx nodemon 
+                    npm install express mysql2 body-parser express-session bcrypt dotenv multer xlsx nodemon 
 
 En mi experiencia tube alunos probmeas con algunas librerias que no se instalaban correctamente por lo que si recomiendo que se instalen individualmente cada una para asegurar su correcto funconamiento.
