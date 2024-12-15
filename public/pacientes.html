@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Gestión de Pacientes y Medicos</title>
+</head>
+<body>
+      <!-- Barra de navegación -->
+      <header class="navbar">
+        <nav>
+            <ul>
+                <li><a href="/index.html">INICIO</a></li>
+                <li><a href="/equipos">EQUIPOS</a></li>
+                <li><a href="/admed">MEDICOS</a></li>
+            </ul>
+        </nav>
+    </header>
+  <h1>Bienvenido a la Gestión de Pacientes</h1>
+  <p>Esta es una página básica para administrar pacientes y sus signos vitales.</p>
+  <h2>Registrar Paciente</h2>
+  <form action="/submit-data" method="POST">
+    <label for="name">Nombre del paciente:</label>
+    <input type="text" id="name" name="name">
+
+    <label for="surname">Apellido del paciente:</label>
+    <input type="text" id="surname" name="surname">
+    
+    <label for="age">Edad:</label>
+    <input type="number" id="age" name="age">
+  
+    <label for="heart-rate">Frecuencia Cardiaca (bpm):</label>
+    <input type="number" id="heart-rate" name="heart_rate">
+  
+    <label for="weight">Peso:</label>
+    <input type="number" id="weight" name="weight">
+
+    <label for="height">Altura:</label>
+    <input type="number" id="height" name="height">
+
+    <label for="date">Ultima cita:</label>
+    <input type="date" id="height" name="date">
+
+    <button type="submit">Guardar</button>
+  </form>
+  <h2>Buscar Pacientes</h2>
+<form action="/buscar-pacientes" method="GET">
+  <label for="name-search">Nombre del paciente:</label>
+  <input type="text" id="name-search" name="name_search">
+  
+  <label for="age-search">Edad del paciente:</label>
+  <input type="number" id="age-search" name="age_search">
+  
+  <button type="submit">Buscar</button>
+</form>
+<h2>Borrar Pacientes</h2>
+<form action="/borrar-pacientes" method="GET">
+  <label for="name-search">Nombre del paciente:</label>
+  <input type="text" id="name-search" name="name_search">
+  
+  <label for="surname-search">Apellido del paciente:</label>
+  <input type="text" id="surname-search" name="surname_search">
+
+  <button type="submit">Borrar</button>
+</form>
+<h2>Modificar cita</h2>
+<form action="/last-date" method="POST">
+  <label for="paciente_name">Nombre del paciente:</label>
+  <input type="text" id="paciente_name" name="paciente_name">
+  
+  <label for="date">Fecha de la ultima cita?:</label>
+  <input type="date" id="date" name="date">
+  
+  <button type="submit">Registrar</button>
+</form>
+  <button onclick="window.location.href='/ordenar-pacientes'">Ordenar Pacientes</button>
+  <button onclick="window.location.href='/ver-pacientes'">Ver Pacientes Guardados</button>
+  <button onclick="window.location.href='/edad-de-pacientes'">Edad Promedio</button>
+  <button onclick="window.location.href='/cantidad-de-pacientes'">Cantidad de pacientes</button>
+  <button onclick="window.location.href='/index'">Volver</button> 
+</body>
+</html>

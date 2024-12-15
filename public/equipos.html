@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Equipos</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+      <!-- Barra de navegación -->
+      <header class="navbar">
+        <nav>
+            <ul>
+                <li><a href="/index.html">INICIO</a></li>
+                <li><a href="/pacientes">PACIENTES</a></li>
+                <li><a href="/admed">MEDICOS</a></li>
+            </ul>
+        </nav>
+    </header>
+  <h1>Cargar Equipos desde Excel</h1>
+  <form action="/upload" method="POST" enctype="multipart/form-data">
+    <input type="file" name="excelFile" accept=".xlsx" />
+    <button type="submit">Subir Archivo</button>
+  </form>
+  <button onclick="window.location.href='/download'">Descargar Equipos</button>
+  <button onclick="window.location.href='/ver-equipos'">Ver Equipos</button>
+  <button onclick="window.location.href='/index'">Volver</button>
+</body>
+</html>

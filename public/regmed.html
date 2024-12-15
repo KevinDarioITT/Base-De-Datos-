@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Gestión de Pacientes y Medicos</title>
+</head>
+<body>
+      <!-- Barra de navegación -->
+      <header class="navbar">
+        <nav>
+            <ul>
+                <li><a href="/index.html">INICIO</a></li>
+                <li><a href="/equipos">EQUIPOS</a></li>
+                <li><a href="/pacientes">PACIENTES</a></li>
+            </ul>
+        </nav>
+    </header>
+  <h1>Registro de medicos</h1>
+  <h2>Registrar Médico</h2>
+<form action="/insertar-medico" method="POST">
+  <label for="medico-name">Nombre:</label>
+  <input type="text" id="medico-name" name="medico_name">
+  <label for="medico-surname">Apellido:</label>
+  <input type="text" id="medico-surname" name="medico_surname">
+  <label for="especialidad">Especialidad:</label>
+  <input type="text" id="especialidad" name="especialidad">
+
+  <button type="submit">Guardar Médico</button>
+</form>
+<button onclick="window.location.href='/medicos'">Ver Medicos</button>
+<button onclick="window.location.href='/ordenar-medicos'">Ver Medicos Ordenados</button>
+<button onclick="window.location.href='/index'">Volver</button>
+</body>
+<script>
+  function pop_up () {
+    alert("Accion completada con exito");
+  }
+</script>
+</html>

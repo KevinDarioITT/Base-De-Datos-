@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inicio</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+      <!-- Barra de navegación -->
+      <header class="navbar">
+        <nav>
+            <ul>
+                <li><a href="/index.html">INICIO</a></li>
+                <li><a href="/equipos">EQUIPOS</a></li>
+                <li><a href="/pacientes">PACIENTES</a></li>
+                <li><a href="/admed">MEDICOS</a></li>
+                <li><a href="/busqueda">BUSQUEDA</a></li>
+                <li><a href="/logout">CERRAR SESION</a></li>
+            </ul>
+        </nav>
+    </header>
+  <h1>Bienvenido al sistema de gestión biomédica</h1>
+  <h2>Borrar Medicos</h2>
+<form action="/borrar-medicos" method="GET">
+  <label for="name-search">Nombre del medico:</label>
+  <input type="text" id="name-search" name="name_search">
+  
+  <label for="surname-search">Apellido del medico:</label>
+  <input type="text" id="surname-search" name="surname_search">
+
+  <label for="job-search">Especialidad del medico:</label>
+  <input type="text" id="job-search" name="job_search">
+  
+  <button type="submit">Borrar</button>
+</form>
+<h2>Borrar Pacientes</h2>
+<form action="/borrar-pacientes" method="GET">
+  <label for="name-search">Nombre del paciente:</label>
+  <input type="text" id="name-search" name="name_search">
+  
+  <label for="surname-search">Apellido del paciente:</label>
+  <input type="text" id="surname-search" name="surname_search">
+
+  <button type="submit">Borrar</button>
+</form>
+<h2>Borrar Usuarios</h2>
+<form action="/borrar-usuarios" method="GET">
+  <label for="name-search">Nombre del usuario:</label>
+  <input type="text" id="name-search" name="name_search">
+  
+  <label for="surname-search">Apellido del usaurio:</label>
+  <input type="text" id="surname-search" name="surname_search">
+
+  <button type="submit">Borrar</button>
+</form>
+  <button onclick="window.location.href='/equipos'">Equipos</button>
+  <button onclick="window.location.href='/pacientes'">Pacientes</button>
+  <button onclick="window.location.href='/admed'">Medicos</button>
+  <button onclick="window.location.href='/ver-usuarios'">Ver usuarios</button>
+  <button onclick="window.location.href='/index'">Volver</button>
+</body>
+</html>

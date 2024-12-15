@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Registrar Usuario</title>
+</head>
+<body>
+  <div id="register-form">
+    <h2>Registrar Usuario</h2>
+    <form action="/registrar" method="POST">
+      <label for="username">Nombre de Usuario:</label>
+      <input type="text" id="username" name="username" required>
+      <label for="contraseña">Contraseña:</label>
+      <input type="password" id="password" name="password" required>
+      <label for="tipo_usuario">Tipo de Usuario:</label>
+      <select id="tipo_usuario" name="tipo_usuario" required>
+        <option value="administrador">Administrador</option>
+        <option value="medico">Médico</option>
+        <option value="paciente">Paciente</option>
+      </select>
+      <button type="submit">Registrar</button>
+    </form>
+  </div>
+  <p>¿Ya tienes cuenta? <a href="/logan">Inicia sesion</a></p>
+</body>
+</html>
