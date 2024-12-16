@@ -37,3 +37,5 @@ Tambien se pueden instalar cuntas combinando el comando de instalacion seguida d
                     npm install express mysql2 body-parser express-session bcrypt dotenv multer xlsx nodemon 
 
 En mi experiencia tube alunos probmeas con algunas librerias que no se instalaban correctamente por lo que si recomiendo que se instalen individualmente cada una para asegurar su correcto funconamiento.
+
+#ESTE ARCHIVO NO VA DENTRO DE LOS ARCHIVOS DEL PROGRAMA
